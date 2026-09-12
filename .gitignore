@@ -1,0 +1,14 @@
+# C/C++ compiled files
+*.o
+*.out
+*.exe
+
+# Java compiled files
+*.class
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
