@@ -1,5 +1,4 @@
 #include<iostream>
-#include<cmath>
 using namespace std;
 
 int main(){
@@ -22,12 +21,14 @@ int main(){
             for(int j=2; j<n; j++){
                 if(n % j == 0){
                     isPrime = false;
+                    break;
                 }
             }
         }
         if(isPrime)
             cout<<n<<" ";
     }
+
     cout<< endl;
     return 0;
 
