@@ -18,6 +18,9 @@ int main(){
     if(result == n){
         cout<<n<<" is a Palindrome Number."<<endl;
     }
+    else{
+        cout<<n<<" is not a Palindrome Number."<<endl;
+    }
 
     return 0;
 }
