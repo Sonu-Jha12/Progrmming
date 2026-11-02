@@ -7,12 +7,12 @@ int knapsackTab(vector<int>wt,vector<int>val, int W, int n){
     vector<vector<int>> dp(n+1,vector<int>(W+1,0));
     
     for(int i = 1; i <= n; i++){
-        for(int j = 1; j <= W; j++){
+        for(int j = 0; j <= W; j++){
             int itemVal = val[i-1];
             int itemWt = wt[i-1];
 
             if(itemWt <= j){
-                dp[i][j] = max((itemVal + dp[i-1][j-itemWt]),(dp[i-1][j]));
+                dp[i][j] = ((itemVal + dp[i-1][j-itemWt]),(dp[i-1][j]));
             }
             else{
                 dp[i][j] = dp[i-1][j];
